@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamma Mia - Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <h1>MAMMA MIA</h1>
+                <p>RISTORANTE ITALIANO</p>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="rewards.html">REWARDS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="order.html" class="active">ORDER</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header order-header">
+            <div class="container">
+                <h1>Place Your Order</h1>
+                <p>Fresh Italian food delivered to your door</p>
+            </div>
+        </section>
+
+        <section class="section order-section">
+            <div class="container">
+                <div class="order-wrapper">
+                    <form id="orderForm" class="order-form">
+                        <div class="form-group">
+                            <label>Service Option <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="service" value="pickup"> Pick-up</label>
+                                <label class="radio-label"><input type="radio" name="service" value="delivery"> Delivery</label>
+                            </div>
+                            <div class="error" id="serviceError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your name">
+                            <div class="error" id="nameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phoneNumber" class="form-control" placeholder="081234567890">
+                            <div class="error" id="phoneError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Select Menu <span class="required">*</span></label>
+                            <select id="menuSelect" class="form-control">
+                                <option value="">-- Choose a dish --</option>
+                                <option value="Spaghetti Carbonara">🍝 Spaghetti Carbonara - $18.90</option>
+                                <option value="Fettuccine Alfredo">🍝 Fettuccine Alfredo - $16.90</option>
+                                <option value="Lasagna Bolognese">🍝 Lasagna Bolognese - $19.90</option>
+                                <option value="Penne Arrabbiata">🍝 Penne Arrabbiata - $15.90</option>
+                                <option value="Margherita Pizza">🍕 Margherita Pizza - $14.50</option>
+                                <option value="Pepperoni Pizza">🍕 Pepperoni Pizza - $16.90</option>
+                                <option value="Quattro Formaggi">🍕 Quattro Formaggi - $17.90</option>
+                                <option value="Tiramisu">🍰 Tiramisu - $9.50</option>
+                                <option value="Panna Cotta">🍰 Panna Cotta - $8.50</option>
+                            </select>
+                            <div class="error" id="menuError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Payment Method <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="payment" value="cash"> Cash</label>
+                                <label class="radio-label"><input type="radio" name="payment" value="creditcard"> Credit Card</label>
+                                <label class="radio-label"><input type="radio" name="payment" value="ewallet"> E-Wallet</label>
+                            </div>
+                            <div class="error" id="paymentError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Extra Toppings (+$1.50 each)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label"><input type="checkbox" name="toppings" value="extra_cheese"> Extra Cheese</label>
+                                <label class="checkbox-label"><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+                                <label class="checkbox-label"><input type="checkbox" name="toppings" value="pepperoni"> Extra Pepperoni</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Eating Utensils</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label"><input type="checkbox" name="utensils" value="fork_knife"> Fork & Knife</label>
+                                <label class="checkbox-label"><input type="checkbox" name="utensils" value="spoon_fork"> Spoon & Fork</label>
+                                <label class="checkbox-label"><input type="checkbox" name="utensils" value="no_need"> No need</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-red btn-submit">PLACE ORDER →</button>
+                    </form>
+
+                    <div class="order-sidebar">
+                        <div class="sidebar-card">
+                            <img src="https://tse4.mm.bing.net/th/id/OIP.OQjfW6nl2i3QjlI7YF8xlwHaEw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="food">
+                            <div class="sidebar-body">
+                                <h4>Order Info</h4>
+                                <p>🍽 All dishes handmade fresh</p>
+                                <p>🚚 Delivery: 30-45 min</p>
+                                <p>💰 Min order: $15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>MAMMA MIA</h4>
+                <p>Authentic Italian since 2007</p>
+            </div>
+            <div class="footer-col">
+                <h4>CONTACT</h4>
+                <p>📞 +62 812 3456 7890</p>
+            </div>
+            <div class="footer-col">
+                <h4>HOURS</h4>
+                <p>Daily: 11:00 - 22:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Mamma Mia Ristorante</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
