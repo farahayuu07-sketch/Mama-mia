@@ -10,7 +10,7 @@ Mama Mia restaurant website. Built with HTML, CSS, and JavaScript.
 - Order page
 
 ## UI Design
-View the interactive prototype on Figma: [Click here] https://www.figma.com/proto/Bk7bTrFROds1hLqDpDnoDb/Mamma-Mia?node-id=16-192&t=MMS7M6dDxcYthecV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
+View the interactive prototype on Figma: https://www.figma.com/proto/Bk7bTrFROds1hLqDpDnoDb/Mamma-Mia?node-id=16-192&t=MMS7M6dDxcYthecV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1
 
 ### Preview
 ![Home](design/home.png)
